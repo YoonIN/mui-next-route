@@ -1,20 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Link from "next/link";
+import { Input } from "@mui/material";
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Input />
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={"/about"}>
             By{" "}
             <Image
               src="/vercel.svg"
@@ -24,7 +22,7 @@ export default function Home() {
               height={24}
               priority
             />
-          </a>
+          </Link>
         </div>
       </div>
 
