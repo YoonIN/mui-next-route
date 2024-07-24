@@ -11,6 +11,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
+        <Link href={"/test"}>link to test page</Link>
         <div>
           <Link href={"/about"}>
             By{" "}
